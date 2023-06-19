@@ -1,6 +1,6 @@
 import { atom } from 'nanostores'
 
-export const $mainTab = atom<string>('technology')
+export const $mainTab = atom<string>('home')
 export const $planetTab = atom<string>('moon')
 export const $crewTab = atom<string>('douglas')
 export const $techTab = atom<string>('vehicle')
