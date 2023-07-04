@@ -28,7 +28,7 @@ export default function Tab() {
           </aside>
           <div
             onClick={onClick}
-            className="group absolute inset-x-28 top-[70%] flex h-[150px] w-[150px] cursor-pointer items-center justify-center rounded-full bg-white md:left-[35%] md:top-[67%] md:h-60 md:w-60 lg:left-[68%] lg:top-[55%] lg:h-72 lg:w-72"
+            className="group absolute inset-x-0 inset-y-0 mx-auto my-auto mb-20 flex h-[150px] w-[150px] cursor-pointer items-center justify-center rounded-full bg-white md:h-60 md:w-60 lg:left-[68%] lg:top-[55%] lg:h-72 lg:w-72"
           >
             <div className="transform transition-colors duration-300 group-hover:absolute group-hover:h-[450px] group-hover:w-[450px] group-hover:rounded-full group-hover:bg-white group-hover:opacity-10 group-hover:ring-1 group-hover:ring-[#979797]" />
             <span className="font-serif text-[20px] uppercase tracking-[2px] md:text-heading-4">

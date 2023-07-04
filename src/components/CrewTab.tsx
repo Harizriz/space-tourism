@@ -64,7 +64,7 @@ export default function CrewTab() {
         </h2>
         <span
           className={classNames(
-            'mx-5 mt-2 h-[150px] text-center font-body text-[15px] leading-[25px] text-light-gray-blue md:mx-0 md:ml-1 md:mt-1 md:h-full md:text-base md:leading-[28px] lg:mt-5 lg:h-[160px] lg:w-[444px] lg:text-start lg:text-lg lg:leading-[32px]',
+            'mx-5 mt-3 h-[150px] text-center font-body text-[15px] leading-[25px] text-light-gray-blue md:mx-0 md:ml-1 md:mt-1 md:h-full md:text-base md:leading-[28px] lg:mt-5 lg:h-[160px] lg:w-[444px] lg:text-start lg:text-lg lg:leading-[32px]',
             {
               'md:!w-[458px]': content.shortname === 'douglas',
               'md:!w-[520px]': content.shortname === 'mark',
@@ -80,9 +80,9 @@ export default function CrewTab() {
   }
 
   return (
-    <main className="h-screen w-full bg-crew-mobile bg-cover bg-no-repeat md:bg-crew-tablet lg:bg-crew-desktop">
-      <aside className="absolute top-24 flex flex-col md:left-[40px] md:top-[136px] lg:left-[13%] lg:top-[25%]">
-        <div className="flex justify-center md:justify-normal">
+    <main className="h-screen min-h-[800px] w-full bg-crew-mobile bg-cover bg-no-repeat md:bg-crew-tablet lg:bg-crew-desktop">
+      <aside className="absolute inset-x-0 top-24 mx-auto flex flex-col md:top-[136px] lg:left-[13%] lg:top-[25%] lg:mx-0">
+        <div className="flex justify-center md:ml-12 md:justify-normal lg:ml-0">
           <h5 className="text-base font-bold uppercase tracking-[2.7px] text-white opacity-25 md:text-[20px] md:tracking-[3.38px] lg:text-heading-5 lg:tracking-[4.72px]">
             02
           </h5>
@@ -90,10 +90,10 @@ export default function CrewTab() {
             Meet your crew
           </h5>
         </div>
-        <div className="mt-[20rem] flex flex-col md:mt-[40px] md:w-[680px] md:items-center lg:mt-[154px] lg:items-start">
+        <div className="mt-[27rem] flex flex-col md:mt-[40px] md:items-center lg:mt-[154px] lg:items-start">
           <CrewDescription crewName={crew} />
         </div>
-        <div className="-mt-[16rem] flex flex-row justify-center space-x-5 md:ml-72 md:mt-[30px] md:justify-normal lg:ml-1 lg:mt-[100px]">
+        <div className="-mt-[16.2rem] flex flex-row justify-center space-x-5 md:mt-[30px] lg:ml-1 lg:mt-[100px] lg:justify-normal">
           {tabs.map(({ name }, key) => (
             <div key={key} onClick={() => onClickCrewTab(name)}>
               <div className="cursor-pointer">
@@ -113,18 +113,18 @@ export default function CrewTab() {
       </aside>
       <div
         className={classNames(
-          'absolute bottom-[21.5rem] left-32 h-[223px] w-[180px] bg-contain bg-no-repeat md:bottom-0 md:left-[20%] md:h-[532px] md:w-[456px] lg:left-[55%] lg:h-[640px] lg:w-[550px]',
+          'absolute inset-x-0 inset-y-0 mx-auto my-auto mt-[150px] h-[322px] w-[237px] bg-contain bg-no-repeat md:my-0 md:mt-auto md:h-[532px] md:w-[456px] lg:left-[55%] lg:mx-0 lg:h-[640px] lg:w-[550px]',
           {
-            'bg-douglas md:left-[28%] lg:!h-[700px]': crew === 'douglas',
-            'left-28 bg-mark md:left-[25%]': crew === 'mark',
-            'bottom-[20.8rem] left-24 bg-victor': crew === 'victor',
-            'bottom-80 left-[5.5rem] w-[226px] bg-ansari md:!h-[480px] lg:!h-[575px]':
+            'ml-[26%] bg-douglas md:ml-[28%] lg:!h-[700px]': crew === 'douglas',
+            'w-[218px] bg-mark md:ml-[26%]': crew === 'mark',
+            '!mt-[194px] h-[279px] bg-victor md:!mt-auto md:h-[535px]': crew === 'victor',
+            '!mt-[224px] h-[248px] w-[226px] bg-ansari md:!mt-auto md:h-[477px] lg:!h-[575px]':
               crew === 'ansari'
           }
         )}
       />
       <div className="flex md:hidden">
-        <div className="absolute inset-y-[51.5%] left-8 z-10 h-[1px] w-[85%] bg-white opacity-25" />
+        <div className="absolute inset-x-0 inset-y-0 z-0 mx-auto my-auto mt-[472px] h-[1px] w-[85%] bg-white opacity-25" />
       </div>
     </main>
   )

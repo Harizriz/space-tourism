@@ -50,7 +50,7 @@ export default function TechTab() {
         <h2 className="mt-2 text-center font-serif text-2xl uppercase text-white md:mt-0 md:text-5xl lg:mt-3 lg:text-start lg:text-[56px]">
           {content.name}
         </h2>
-        <span className="mx-5 mt-2 h-[160px] text-center font-body text-[15px] leading-[25px] text-light-gray-blue md:mx-0 md:mt-0 md:w-[458px] md:text-base md:leading-[28px] lg:ml-1 lg:mt-5 lg:w-[444px] lg:text-start lg:text-lg lg:leading-[32px]">
+        <span className="mx-5 mt-3 h-[160px] text-center font-body text-[15px] leading-[25px] text-light-gray-blue md:mx-0 md:mt-0 md:w-[458px] md:text-base md:leading-[28px] lg:ml-1 lg:mt-5 lg:w-[444px] lg:text-start lg:text-lg lg:leading-[32px]">
           {content.desc}
         </span>
       </Fragment>
@@ -60,15 +60,15 @@ export default function TechTab() {
   const TechVehicle: FC<{ techName: string }> = ({ techName }) => {
     if (techName === 'capsule') {
       return (
-        <div className="absolute right-0 top-36 h-[170px] w-[375px] bg-capsule-landscape bg-contain bg-no-repeat md:top-[22%] md:h-[310px] md:w-full lg:top-[33%] lg:h-[527px] lg:w-[515px] lg:bg-capsule-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-capsule-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-capsule-portrait" />
       )
     } else if (techName === 'spaceport') {
       return (
-        <div className="absolute right-0 top-36 h-[170px] w-[375px] bg-spaceport-landscape bg-contain bg-no-repeat md:top-[22%] md:h-[310px] md:w-full lg:top-[33%] lg:h-[527px] lg:w-[515px] lg:bg-spaceport-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-spaceport-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-spaceport-portrait" />
       )
     } else {
       return (
-        <div className="absolute right-0 top-36 h-[170px] w-[375px] bg-vehicle-landscape bg-contain bg-no-repeat md:top-[22%] md:h-[310px] md:w-full lg:top-[33%] lg:h-[527px] lg:w-[515px] lg:bg-vehicle-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-vehicle-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-vehicle-portrait" />
       )
     }
   }
@@ -83,7 +83,7 @@ export default function TechTab() {
             Space Launch 101
           </h5>
         </div>
-        <div className="mt-52 flex flex-col md:mt-[425px] md:items-center lg:mt-[137px] lg:flex-row lg:items-start">
+        <div className="mt-[55%] flex flex-col md:mt-[425px] md:items-center lg:mt-[137px] lg:flex-row lg:items-start">
           <div className="flex justify-center space-x-4 md:flex-row md:justify-normal lg:ml-1 lg:flex-col lg:space-x-0 lg:space-y-11">
             {tabs.map(({ step, name }, key) => (
               <div key={key} onClick={() => onClickTechTab(name)}>

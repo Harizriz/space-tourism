@@ -86,9 +86,9 @@ export default function PlanetTab() {
   }
 
   return (
-    <main className="h-[850px] w-screen overflow-x-hidden overflow-y-scroll bg-destination-mobile bg-cover bg-scroll md:h-screen md:overflow-y-hidden md:bg-destination-tablet lg:bg-destination-desktop">
-      <aside className="absolute inset-x-[4.7rem] top-24 flex flex-col md:left-[40px] md:top-[136px] lg:left-[13%] lg:top-[25%]">
-        <div className="flex">
+    <main className="h-screen min-h-[850px] overflow-x-hidden overflow-y-scroll bg-destination-mobile bg-cover bg-scroll md:h-screen md:min-h-[1024px] md:overflow-y-hidden md:bg-destination-tablet lg:bg-destination-desktop">
+      <aside className="absolute top-24 mx-auto flex w-screen flex-col md:top-[136px] lg:left-[13%] lg:top-[25%]">
+        <div className="flex justify-center md:ml-12 md:justify-start">
           <h5 className="text-base font-bold uppercase tracking-[2.7px] text-white opacity-25 md:text-[20px] md:tracking-[3.38px] lg:text-heading-5 lg:tracking-[4.72px]">
             01
           </h5>
@@ -98,7 +98,7 @@ export default function PlanetTab() {
         </div>
         <div
           className={classNames(
-            'absolute inset-x-7 mt-12 h-[170px] w-[170px] transform bg-contain bg-no-repeat md:left-52 md:mt-[80px] md:h-[300px] md:w-[300px] lg:left-12 lg:mt-[150px] lg:h-[445px] lg:w-[445px]',
+            'absolute inset-x-0 mx-auto mt-12 h-[170px] w-[170px] transform bg-contain bg-no-repeat md:mt-[80px] md:h-[300px] md:w-[300px] lg:left-12 lg:mx-0 lg:mt-[150px] lg:h-[445px] lg:w-[445px]',
             {
               'bg-moon': planetTab === 'moon',
               'bg-mars': planetTab === 'mars',
@@ -108,7 +108,7 @@ export default function PlanetTab() {
           )}
         />
       </aside>
-      <article className="absolute top-[21rem] flex h-[472px] flex-col items-center md:left-[14%] md:top-[56%] md:w-[573px] lg:left-[60%] lg:top-[38%] lg:w-[445px] lg:items-start">
+      <article className="absolute inset-x-0 top-[21rem] mx-auto flex h-[472px] flex-col items-center md:top-[56%] md:h-max md:w-[573px] lg:left-[63%] lg:top-[38%] lg:mx-0 lg:w-[445px] lg:items-start">
         <div className="flex flex-row space-x-6 md:space-x-8 lg:ml-2">
           {tabs.map(({ name }, key) => (
             <div className="group" key={key} onClick={() => onClickPlanetTab(name)}>
