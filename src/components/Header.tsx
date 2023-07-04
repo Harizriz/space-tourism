@@ -49,7 +49,7 @@ export default function Header() {
         </div>
         <div className="hidden md:flex">
           <div className="absolute inset-y-[3.1rem] left-[165px] z-10 h-[1px] w-[calc(100vw-975px)] bg-white opacity-25" />
-          <nav className="absolute z-0 flex h-24 items-center bg-header backdrop-blur-[40.7742px] md:left-[calc(100vw-450px)] md:w-[450px] md:space-x-9 md:pl-11 md:tracking-[2.36px] lg:left-[calc(100vw-850px)] lg:w-[830px] lg:justify-end lg:space-x-12 lg:pr-[125px]">
+          <nav className="absolute z-0 flex h-24 items-center bg-header backdrop-blur-[40px] md:left-[calc(100vw-450px)] md:w-[450px] md:space-x-9 md:pl-11 md:tracking-[2.36px] lg:left-[calc(100vw-850px)] lg:w-[830px] lg:justify-end lg:space-x-12 lg:pr-[125px]">
             {tabs.map(({ number, name }, key) => (
               <div
                 className={classNames('group flex flex-col-reverse', {
