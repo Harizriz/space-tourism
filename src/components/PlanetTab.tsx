@@ -88,7 +88,7 @@ export default function PlanetTab() {
   return (
     <main className="h-screen min-h-[850px] overflow-x-hidden overflow-y-scroll bg-destination-mobile bg-cover bg-scroll md:h-screen md:min-h-[1024px] md:overflow-y-hidden md:bg-destination-tablet lg:bg-destination-desktop">
       <aside className="absolute top-24 mx-auto flex w-screen flex-col md:top-[136px] lg:left-[13%] lg:top-[25%]">
-        <div className="flex justify-center md:ml-12 md:justify-start">
+        <div className="flex justify-center md:ml-12 md:justify-start lg:ml-0">
           <h5 className="text-base font-bold uppercase tracking-[2.7px] text-white opacity-25 md:text-[20px] md:tracking-[3.38px] lg:text-heading-5 lg:tracking-[4.72px]">
             01
           </h5>
