@@ -115,7 +115,7 @@ export default function CrewTab() {
         className={classNames(
           'absolute inset-x-0 inset-y-0 mx-auto my-auto mt-[150px] h-[322px] w-[237px] bg-contain bg-no-repeat md:my-0 md:mt-auto md:h-[532px] md:w-[456px] lg:left-[55%] lg:mx-0 lg:h-[640px] lg:w-[550px]',
           {
-            'ml-[26%] bg-douglas md:ml-[28%] lg:!h-[700px]': crew === 'douglas',
+            'bg-douglas md:ml-[28%] lg:!h-[700px]': crew === 'douglas',
             'w-[218px] bg-mark md:ml-[26%]': crew === 'mark',
             '!mt-[194px] h-[279px] bg-victor md:!mt-auto md:h-[535px]': crew === 'victor',
             '!mt-[224px] h-[248px] w-[226px] bg-ansari md:!mt-auto md:h-[477px] lg:!h-[575px]':

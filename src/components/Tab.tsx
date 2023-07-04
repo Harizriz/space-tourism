@@ -15,7 +15,7 @@ export default function Tab() {
     <>
       {mainTab === 'home' ? (
         <main className="h-screen w-screen bg-home-mobile bg-cover bg-no-repeat md:flex md:flex-col md:bg-home-tablet lg:bg-home-desktop">
-          <aside className="absolute inset-x-0 top-[25%] flex -translate-y-12 transform flex-col items-center md:left-[21%] md:top-[25%] md:h-[382px] md:w-[450px] lg:left-[13%] lg:top-[45%] lg:items-start">
+          <aside className="absolute inset-x-0 top-[25%] mx-auto flex -translate-y-12 transform flex-col items-center md:top-[25%] md:h-[382px] md:w-[450px] lg:left-[13%] lg:top-[45%] lg:mx-0 lg:items-start">
             <h5 className="uppercase tracking-[2.7px] text-light-gray-blue md:text-[20px] md:tracking-[4.72px] lg:ml-2 lg:text-heading-5">
               so, you want to travel to
             </h5>

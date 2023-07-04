@@ -60,15 +60,15 @@ export default function TechTab() {
   const TechVehicle: FC<{ techName: string }> = ({ techName }) => {
     if (techName === 'capsule') {
       return (
-        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-capsule-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-capsule-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-full bg-capsule-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-capsule-portrait" />
       )
     } else if (techName === 'spaceport') {
       return (
-        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-spaceport-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-spaceport-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-full bg-spaceport-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-spaceport-portrait" />
       )
     } else {
       return (
-        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-[full] bg-vehicle-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-vehicle-portrait" />
+        <div className="absolute inset-x-0 top-36 mx-auto h-[170px] w-full bg-vehicle-landscape bg-contain bg-no-repeat md:top-[225px] md:h-[310px] md:w-[768px] lg:top-[33%] lg:mx-0 lg:ml-auto lg:h-[527px] lg:w-[515px] lg:bg-vehicle-portrait" />
       )
     }
   }
